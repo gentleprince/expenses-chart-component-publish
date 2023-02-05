@@ -7,7 +7,7 @@ getData();
 
 async function getData() {
     // url
-    const url = 'https://expenses-chart/data.json'
+    const url = 'https://expenses-chartjs.netlify.app/data.json'
     // fetch option
     const headers_option = {
         headers: {
