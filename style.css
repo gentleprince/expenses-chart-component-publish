@@ -1,0 +1,163 @@
+body {
+  background-color: rgba(255, 159, 64, 0.2);
+  max-height: 100vh;
+  position: relative;
+  top: 10vh;
+}
+
+.heading {
+  height: 15vh;
+  width: 30vw;
+  margin: 0 auto;
+  background: hsl(10, 79%, 65%);
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#left-heading {
+  color: #fff;
+  margin-left: 20px;
+}
+
+#right-heading {
+  height: 40px;
+  width: 40px;
+  margin-right: 20px;
+}
+
+h6 {
+  font-weight: lighter;
+}
+
+#total {
+  height: 26px;
+  margin-top: -15px;
+  font-weight: bolder;
+}
+
+.chart1 {
+  height: 58vh;
+  width: 30vw;
+  margin: 0 auto;
+  background: hsl(33, 100%, 98%);
+  margin-top: 3vh;
+  border-radius: 20px;
+}
+
+.crt {
+  height: 40vh;
+  position: relative;
+}
+
+.details {
+  display: flex;
+  justify-content: space-around;
+}
+
+#head1 {
+  color: #999;
+  height: 0px;
+  margin-bottom: 0px;
+  font-size: 12px;
+}
+
+#para1 {
+  font-weight: bolder;
+  font-size: 30px;
+  margin-top: 20px;
+  color: hsl(25, 47%, 15%);
+}
+
+#para2 {
+  font-weight: bolder;
+  padding-left: 46.5px;
+  margin-top: 26.8px;
+  margin-bottom: -20px;
+  color: hsl(25, 47%, 15%);
+}
+
+#head2 {
+  color: #999;
+  height: 0px;
+  margin-bottom: 0px;
+}
+
+.attribution {
+  margin-top: 5vh;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.attribution a {
+  text-decoration: none;
+}
+/*media queries */
+
+/* phones */
+@media screen and (max-width: 480px) and (orientation: portrait) {
+  .heading {
+    width: auto;
+  }
+  #right-heading {
+    height: 65px;
+    width: 65px;
+  }
+  #left-heading {
+    font-size: 24px;
+  }
+  #total {
+    margin-top: -30px;
+  }
+  h6 {
+    margin-top: 31px;
+    color: #ddd;
+  }
+  .chart1 {
+    width: auto;
+  }
+}
+/*tablets */
+@media screen and (max-width: 960px) and (min-width: 479px) and (orientation: portrait) {
+  .heading {
+    width: 60vw;
+  }
+  #right-heading {
+    height: 85px;
+    width: 85px;
+  }
+  #left-heading {
+    font-size: 35px;
+  }
+  #total {
+    margin-top: -30px;
+  }
+  h6 {
+    margin-top: 31px;
+    color: #ddd;
+  }
+  .chart1 {
+    width: 60vw;
+    height: 50vh;
+  }
+  #head1,
+  #head2 {
+    font-size: 20px;
+  }
+
+  #para1,
+  #para2 {
+    font-size: 40px;
+  }
+  #para2 {
+    margin-top: -1em;
+    padding-left: 25px;
+  }
+  #head1 {
+    margin-top: -1.66em;
+    margin-bottom: 1.66em;
+  }
+}
